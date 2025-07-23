@@ -1,1 +1,14 @@
+<mat-sidenav-container style="height: 10em">
+  <mat-sidenav #sidenav mode="side" [(opened)]="opened">
+    <div><button mat-button (click)="navigate('about')">About Us</button></div>
+    <div><button mat-button (click)="navigate('contact-us')">Contact Us</button></div>
+    <div><button mat-button (click)="navigate('login')">Login</button></div>
+  </mat-sidenav>
+
+  <mat-sidenav-content>
+    <p><button matButton (click)="sidenav.toggle()">
+      <fa-icon [icon]="faBars" [class]="'fa-lg'"></fa-icon>
+    </button></p>
+  </mat-sidenav-content>
+</mat-sidenav-container>
 <router-outlet />

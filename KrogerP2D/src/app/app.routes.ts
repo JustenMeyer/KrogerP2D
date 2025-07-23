@@ -6,10 +6,6 @@ import { Login } from './features/login/login';
 
 export const routes: Routes = [
   {
-    path: '',
-    component: Home
-  },
-  {
     path: 'about',
     component: About
   },
@@ -20,5 +16,9 @@ export const routes: Routes = [
   {
     path: 'login',
     component: Login
+  },
+  {
+    path: '',
+    component: Home
   }
 ];
